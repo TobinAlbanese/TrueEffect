@@ -1,0 +1,13 @@
+# Data Access Layer
+
+## Purpose
+
+Plan future backend work for data access layer.
+
+## MVP Notes
+
+Keep the first implementation narrow, Sacramento/California-focused, source-grounded, privacy-conscious, and reviewable.
+
+## Future Expansion
+
+Expand only after the MVP proves trust, retention, source reliability, and operational review capacity.

@@ -1,0 +1,48 @@
+import type { ReviewItem } from "@/lib/types";
+
+export const adminReviewItems: ReviewItem[] = [
+  {
+    id: "review-insurance",
+    title: "State Insurance Rule Update",
+    status: "Needs review",
+    impactLevel: "High",
+    confidence: "Medium",
+    uncertainty: "Medium",
+    riskLabels: ["Housing costs", "Consumer finance", "Sensitive local impact"],
+    reviewerNotes: "Check that premium impact language stays conditional and does not overstate timing.",
+    sourceIds: ["state-insurance-bulletin"],
+  },
+  {
+    id: "review-school-budget",
+    title: "School District Budget Hearing",
+    status: "Draft",
+    impactLevel: "High",
+    confidence: "High",
+    uncertainty: "Low",
+    riskLabels: ["Schools", "Family services", "Taxes"],
+    reviewerNotes: "Confirm hearing date and program language before publishing.",
+    sourceIds: ["school-budget-hearing"],
+  },
+  {
+    id: "review-utility",
+    title: "Utility Rate Proposal",
+    status: "Approved",
+    impactLevel: "Medium",
+    confidence: "High",
+    uncertainty: "Low",
+    riskLabels: ["Monthly costs", "Small business"],
+    reviewerNotes: "Approved as a budget signal with clear uncertainty notes.",
+    sourceIds: ["utility-proposal"],
+  },
+  {
+    id: "review-safety",
+    title: "Public Safety Policy Update",
+    status: "Correction required",
+    impactLevel: "Medium",
+    confidence: "Medium",
+    uncertainty: "High",
+    riskLabels: ["Public safety", "Local budget", "Sensitive issue"],
+    reviewerNotes: "Separate facts from interpretation more clearly before publishing.",
+    sourceIds: ["public-safety-memo"],
+  },
+];

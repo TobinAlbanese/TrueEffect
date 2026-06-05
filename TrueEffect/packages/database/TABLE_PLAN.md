@@ -1,0 +1,45 @@
+# Table Plan
+
+## Future Tables
+
+- users/auth handled by Supabase Auth: authentication identities and sessions managed outside custom tables.
+- profiles: user-owned profile details and personalization settings.
+- user_location_profiles: ZIP and jurisdiction mappings for each user.
+- user_concerns: selected life areas and issue concerns.
+- jurisdictions: city, county, state, school district, legislative district, and agency boundaries.
+- zip_code_mappings: ZIP-to-jurisdiction relationships.
+- source_registry: source metadata, owner, method, trust level, and refresh cadence.
+- source_checks: fetch/check history and health status.
+- raw_documents: original public source records, files, or manually entered source artifacts.
+- normalized_documents: extracted text, metadata, version data, and source references.
+- document_chunks: retrieval chunks from normalized documents.
+- document_embeddings: future semantic vectors for retrieval.
+- events: detected real-world changes.
+- event_sources: source-document links supporting each event.
+- event_versions: change history for event interpretation.
+- issues: durable topics that group events and updates.
+- issue_updates: dated updates within an issue.
+- issue_watchers: users or watchlist items following an issue.
+- impact_cards: published or draft TrueEffect explanations.
+- impact_card_sections: structured sections inside each card.
+- impact_dimensions: life area, urgency, confidence, and category dimensions.
+- relevance_scores: user or segment relevance calculations.
+- feed_items: user-visible feed entries derived from published content.
+- saved_items: user-saved cards or issues.
+- user_watchlists: private user watchlist entries.
+- alerts: alert records for urgent or watchlist-based notifications.
+- weekly_briefs: generated weekly email summaries.
+- ask_trueeffect_requests: user questions and request metadata.
+- ask_trueeffect_outputs: grounded answer records and safety status.
+- review_queue: items awaiting reviewer action.
+- review_actions: reviewer decisions, notes, and timestamps.
+- corrections: corrections and public update notices.
+- audit_logs: security-sensitive action history.
+- admin_roles: role assignments for reviewers, editors, admins, and owners.
+- subscriptions: billing plan and entitlement state synced from Stripe.
+- usage_limits: plan-based and user-specific usage counters.
+- notifications: notification preferences and delivery records.
+- source_quality_scores: trust and reliability scoring history for sources.
+- ai_runs: AI workflow metadata, model routing, cost, and safety status.
+- ai_eval_results: evaluation results for AI quality and regression checks.
+- ingestion_jobs: background job status, retries, errors, and outputs.
